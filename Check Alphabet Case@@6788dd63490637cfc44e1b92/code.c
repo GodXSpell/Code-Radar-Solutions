@@ -7,8 +7,10 @@ int main() {
 
     if (isupper(ch)) {
         printf("Uppercase", ch);
-    } else {
+    } else if (!isupper(ch)) {
         printf("Lowercase", ch);
+    } else{
+        printf("Not a alphabet")
     }
 
     return 0;
