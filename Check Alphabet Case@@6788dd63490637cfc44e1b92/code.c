@@ -1,17 +1,16 @@
 #include <stdio.h>
-#include <ctype.h>  // Include the ctype.h library
-
+#include<ctype.h>
 int main() {
-    char ch;
-    scanf("%c", &ch);
-
-    if (isupper(ch)) {
-        printf("Uppercase", ch);
-    } else if (islower(ch)) {
-        printf("Lowercase", ch);
-    } else{
-        printf("Not a alphabet");
+    char a;
+    scanf("%c",&a);
+    if(isupper(a)){
+        printf("Uppercase");
     }
-
+    else if(islower(a)){
+        printf("Lowercase");
+    }
+    else{
+        printf("Not an alphabet");
+    }
     return 0;
 }
