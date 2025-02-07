@@ -2,15 +2,16 @@
 #include <math.h>
 
 int main() {
-    int a,b,c res;
-    scanf("%d %d %d",&a,&b,&c);
-    a=math.pow(a,2);
-    b=math.pow(b,2);
-    c= math.pow(c,2);
-    if (c = (a+b)){
-        printf("Valid");
+    int a, b, c;
+    scanf("%d %d %d", &a, &b, &c);
 
-    }else{
+    int a_sq = a * a;
+    int b_sq = b * b;
+    int c_sq = c * c;
+
+    if (c_sq == (a_sq + b_sq)) {
+        printf("Valid");
+    } else {
         printf("Not Valid");
     }
     return 0;
