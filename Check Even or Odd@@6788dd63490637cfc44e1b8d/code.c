@@ -6,7 +6,7 @@ int main() {
     if (a%2 == 0){
         printf("Even");
     }else{
-        printf("False");
+        printf("Odd");
     }
     //printf("%d", );
     return 0;
