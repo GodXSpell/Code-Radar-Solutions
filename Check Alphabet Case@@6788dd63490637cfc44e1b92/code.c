@@ -2,7 +2,7 @@
 #include <ctype.h>  // Include the ctype.h library
 
 int main() {
-    char ch[100];
+    char ch;
     scanf("%c", &ch);
 
     if (isupper(ch)) {
