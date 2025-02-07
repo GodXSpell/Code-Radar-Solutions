@@ -12,7 +12,7 @@ int main() {
     if (c_sq == (a_sq + b_sq)) {
         printf("Valid");
     } else {
-        printf("Not Valid");
+        printf("Invalid");
     }
     return 0;
 }
