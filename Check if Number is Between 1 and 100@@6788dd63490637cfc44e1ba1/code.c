@@ -5,9 +5,9 @@ int main() {
     scanf("%d", &num);
 
     if (num >= 1 && num <= 100) {
-        printf("Yo you in");
+        printf("In Range");
     } else {
-        printf("Yo you are out dude ");
+        printf("Out of Range");
     }
 
     return 0;
