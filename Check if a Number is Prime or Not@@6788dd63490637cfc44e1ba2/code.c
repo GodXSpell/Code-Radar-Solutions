@@ -1,31 +1,34 @@
 #include <stdio.h>
 #include <math.h>
 
+// Function to check if a number is prime
+int is_prime(int num) {
+    if (num <= 1) {
+        return 0;
+    }
+    if (num == 2) {
+        return 1;
+    }
+    for (int i = 2; i <= sqrt(num); i++) {
+        if (num % i == 0) {
+            return 0;
+        }
+    }
+    return 1;
+}
+
 int main() {
-    int is_prime, i, flag = 1;
+    int number;
 
     // Input the number
     printf("Enter a number: ");
-    scanf("%d", &is_prime);
+    scanf("%d", &number);
 
-    if (is_prime <= 1) {
-        printf("Not Prime\n");
-    } else if (is_prime == 2) {
-        printf("Prime\n");
+    // Check if the number is prime using the is_prime function
+    if (is_prime(number)) {
+        printf("%d is a prime number\n", number);
     } else {
-        // Check for factors other than 1 and the number itself
-        for (i = 2; i <= sqrt(is_prime); i++) {
-            if (is_prime % i == 0) {
-                flag = 0;
-                break;
-            }
-        }
-
-        if (flag) {
-            printf("Prime\n");
-        } else {
-            printf("Not Prime\n");
-        }
+        printf("%d is not a prime number\n", number);
     }
 
     return 0;
