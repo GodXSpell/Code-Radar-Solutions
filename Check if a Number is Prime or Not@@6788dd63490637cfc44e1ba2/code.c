@@ -1,23 +1,19 @@
 #include <stdio.h>
-#include <math.h>
 
-// Function to check if a number is prime and print the result
-void is_prime(int num) {
+// Function to check if a number is prime
+int is_prime(int num) {
     if (num <= 1) {
-        printf("%d is not a prime number\n", num);
-        return;
+        return 0;
     }
     if (num == 2) {
-        printf("%d is a prime number\n", num);
-        return;
+        return 1;
     }
-    for (int i = 2; i <= sqrt(num); i++) {
+    for (int i = 2; i < num; i++) {
         if (num % i == 0) {
-            printf("%d is not a prime number\n", num);
-            return;
+            return 0;
         }
     }
-    printf("%d is a prime number\n", num);
+    return 1;
 }
 
 int main() {
@@ -28,7 +24,11 @@ int main() {
     scanf("%d", &number);
 
     // Check if the number is prime using the is_prime function
-    is_prime(number);
+    if (is_prime(number)) {
+        printf("%d is a prime number\n", number);
+    } else {
+        printf("%d is not a prime number\n", number);
+    }
 
     return 0;
 }
