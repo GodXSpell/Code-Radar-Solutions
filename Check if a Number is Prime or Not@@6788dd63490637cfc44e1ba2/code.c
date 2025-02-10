@@ -8,11 +8,14 @@ int main(){
             printf("Not Prime");
         } else if (is_prime == 2){
             printf("Prime");
-        }
-        else if (is_prime % 2 != 0){
-            printf("Prime");
-        }else{
-            printf("Not Prime");
+        } else{
+            for (int i=0;i<15;i++){
+                if (is_prime % i == 0){
+                    printf("Not Prime");
+                }else{
+                    printf("Prime");
+                }
+            }
         }
     }
     return 0;
