@@ -20,7 +20,6 @@ int main() {
     int number;
 
     // Input the number
-    printf("Enter a number: ");
     scanf("%d", &number);
 
     // Check if the number is prime using the is_prime function
