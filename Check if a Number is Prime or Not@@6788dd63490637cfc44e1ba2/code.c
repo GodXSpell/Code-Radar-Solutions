@@ -9,7 +9,7 @@ int main(){
         } else if (is_prime == 2){
             printf("Prime");
         }
-        else if (is_prime % 2 == 0){
+        else if (is_prime % 2 != 0){
             printf("Prime");
         }else{
             printf("Not Prime");
