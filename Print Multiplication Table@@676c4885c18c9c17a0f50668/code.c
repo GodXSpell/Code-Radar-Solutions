@@ -6,6 +6,6 @@ int main(){
     int num;
     scanf("%d",&num);
     for (int i = 1; i < 11; i++){
-       printf("%d X %d = %d\n",num,i,num*i);
+       printf("%d x %d = %d\n",num,i,num*i);
     }
 }
