@@ -19,7 +19,12 @@ int main(){
             }    
         }
         for(int z = 1;z<num;z++){
-            printf("*");
+            if((i+j)<num-1){
+                printf(" ");
+            }
+            else {
+                printf("*");
+            }
         }
         printf("\n");
     }
