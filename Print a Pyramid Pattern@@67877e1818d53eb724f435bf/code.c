@@ -1,31 +1,16 @@
-// Your code here...
 #include <stdio.h>
-int main(){
+int main() {
     int num;
-    scanf("%d",&num);
-    // for (int i = num-1; i > 0 ; i--){
-    //     for (int j = 0; j<i; j++){
-    //         printf("|");
-    //     }
-    //     printf("*\n");
-    // }
-    for (int i = 0; i<num;i++){
-        for (int j = 0; j<num;j++){
-            if((i+j)<num-1){
+    scanf("%d", &num);
+    for (int i = 0; i < num; i++) {
+        for (int j = 0; j < 2 * num - 1; j++) {
+            if (abs(num - 1 - j) > i) {
                 printf(" ");
-            }
-            else {
-                printf("*");
-            }    
-        }
-        for(int z = num;z>0;z--){
-            if((i+z)<num+1){
-                printf(" ");
-            }
-            else {
+            } else {
                 printf("*");
             }
         }
         printf("\n");
     }
+    return 0;
 }
