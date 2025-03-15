@@ -9,8 +9,8 @@ int main(){
     //     }
     //     printf("*\n");
     // }
-    for (int i = 0; i<num;i++){
-        for (int j = 0; j<num;j++){
+    for (int i = 1; i<num+1;i++){
+        for (int j = 1; j<num+1;j++){
             if((i+j)<num){
                 printf("|");
             }
