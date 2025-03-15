@@ -12,11 +12,14 @@ int main(){
     for (int i = 0; i<num;i++){
         for (int j = 0; j<num;j++){
             if((i+j)<num-1){
-                printf("|");
+                printf(" ");
             }
             else {
                 printf("*");
             }    
+        }
+        for(int z = 1;z<num;z++){
+            printf("*");
         }
         printf("\n");
     }
