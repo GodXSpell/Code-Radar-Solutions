@@ -6,8 +6,8 @@ int main(){
     scanf("%d",&num);
     for (int i = 0; i < num; i++){
         for (int j = 0; j <= 2*num-1; j++){
-            if((num-1-j)>i){printf("%d",j);}
-            else{printf(" ");}
+            if((num-1-j)>i){printf(" ");}
+            else{printf("%d",j);}
         }
         printf("\n");
     }
