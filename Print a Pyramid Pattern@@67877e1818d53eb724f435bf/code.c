@@ -19,7 +19,7 @@ int main(){
             }    
         }
         for(int z = 1;z<num;z++){
-            if((i+j)<num-1){
+            if((i+z)<num-1){
                 printf(" ");
             }
             else {
