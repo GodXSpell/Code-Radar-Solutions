@@ -12,7 +12,7 @@ int main() {
             }
         }
         for (int j = 2*num-1; j < 0; j--) {
-            if(j < num - 1 - i || j > num - 1 + i){
+            if(j < num + 1 - i || j > num + 1 + i){
                 printf(" ");
             }else{
                 printf("*");
