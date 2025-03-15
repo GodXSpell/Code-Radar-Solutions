@@ -18,7 +18,7 @@ int main(){
                 printf("*");
             }    
         }
-        for(int z = num;z<1;z--){
+        for(int z = num;z>1;z--){
             if((i+z)<num-1){
                 printf(" ");
             }
