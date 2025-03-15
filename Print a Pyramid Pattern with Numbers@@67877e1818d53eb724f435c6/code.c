@@ -7,7 +7,7 @@ int main(){
     for (int i = 0; i < num; i++){
         for (int j = 0; j <= 2*num-1; j++){
             if((num-1-j)>i ||(num-1-j)<i){printf(" ");}
-            else{printf("*",);}
+            else{printf("*");}
         }
         printf("\n");
     }
