@@ -10,7 +10,7 @@ int main(){
 
     while (token != NULL){
         count++;
-        token = strtok(str," ");    
+        token = strtok(NULL," ");    
     }
     printf("%d", count);
     return 0; 
