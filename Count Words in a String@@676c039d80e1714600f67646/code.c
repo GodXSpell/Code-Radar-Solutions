@@ -5,6 +5,7 @@
 int main(){
     char str[100];
     int count = 0;
+    scanf("%[^\n]", &str);
     char *token = strtok(str," ");
 
     while (token != NULL){
@@ -12,5 +13,5 @@ int main(){
         token = strtok(str," ");    
     }
     printf("%d", count);
-   return 0; 
+    return 0; 
 }
