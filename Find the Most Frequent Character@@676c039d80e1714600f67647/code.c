@@ -8,13 +8,19 @@ int main(){
     scanf("%[^\n]",&str);
     int count1 = 0, count2 = 0;
     int len = strlen(str);
-    // for (int i = 0; i < len; i++){
-
-    // }
-    int len = strlen(str); // Compute the length of the string once
-    for (int i = 0; i < len; i++) {
-        freq[(int)str[i]]++; // Increment the frequency of each character
+    for (int i = 0; i < len; i++){
+        for (int j = 0; j < len - 1 ; j++){    
+            if(str[i] == str[j+1]){
+                count1++;
+            }
+            // else{
+            //     j++;
+            // }
+        }
     }
+    // if (count1>count2)
+    printf("%d", count1);
+    
 
     return 0; 
 }
