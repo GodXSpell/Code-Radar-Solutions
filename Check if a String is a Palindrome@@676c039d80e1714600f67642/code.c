@@ -17,7 +17,7 @@ int main() {
 
         if (rev[i] != name [i]){
             printf("No");
-            break;
+            return 0;
         }   
         
     }
