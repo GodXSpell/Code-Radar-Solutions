@@ -1,5 +1,5 @@
 // Your code here...
-#include <stdi.h>
+#include <stdio.h>
 
 int main(){
     char str[100];
