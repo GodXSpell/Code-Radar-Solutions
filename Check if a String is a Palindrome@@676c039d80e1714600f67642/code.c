@@ -5,16 +5,22 @@
 int main() {
     char name[100], rev[100];    
     scanf("%s", &name);
-    int len = strlen(name);
+    int len = strlen(name),j=0;
 
     for (int i = len; i >= 0 ; i--) {
-        rev = name[i];
+        rev[j] = name[i];
+        j++;
     }
 
-    if (rev[i] == name [i]){
-        printf("Yes");
-    }else{
-        printf("No")
+    for (int i = 0; i< len ; i++ ){
+
+        if (rev[i] != name [i]){
+            printf("No");
+            break;
+        }   
+        else{
+            printf("Yes")
+        }
     }
     return 0;
 }
