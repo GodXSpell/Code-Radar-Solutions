@@ -5,8 +5,8 @@
 
 int main(){
     char str[100],str1[100];
-    scanf("%s",&str);
-    scanf("%s",&str1);
+    scanf("%[^\n]",&str);
+    scanf("%[^\n]",&str1);
     strcat(str,str1);
     printf("%s", str);
     
