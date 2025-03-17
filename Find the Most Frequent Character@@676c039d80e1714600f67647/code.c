@@ -1,26 +1,34 @@
-// Your code here...
-// Your code here...
 #include <stdio.h>
-#include <string.h>
 
-int main(){
-    char str[100];
-    scanf("%[^\n]",&str);
-    int count1 = 0, count2 = 0;
-    int len = strlen(str);
-    for (int i = 0; i < len; i++){
-        for (int j = 0; j < len - 1 ; j++){    
-            if(str[i] == str[j+1]){
-                count1++;
+int main() {
+    char str[1000];
+    char mostFrequent = '\0';
+    int maxFreq = 0;
+
+    // Read input string including spaces
+    scanf("%[^\n]", str);
+
+    // Outer loop to pick each character
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == ' ') continue; // Ignore spaces
+        
+        int count = 0;
+
+        // Inner loop to count occurrences of str[i]
+        for (int j = 0; str[j] != '\0'; j++) {
+            if (str[i] == str[j]) {
+                count++;
             }
-            // else{
-            //     j++;
-            // }
+        }
+
+        // Update mostFrequent character
+        if (count > maxFreq || (count == maxFreq && str[i] < mostFrequent)) {
+            maxFreq = count;
+            mostFrequent = str[i];
         }
     }
-    // if (count1>count2)
-    printf("%d", count1);
-    
 
-    return 0; 
+    printf("%c\n", mostFrequent);
+
+    return 0;
 }
