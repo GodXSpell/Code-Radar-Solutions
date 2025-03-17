@@ -11,8 +11,10 @@ int main(){
     // for (int i = 0; i < len; i++){
 
     // }
-    for (int i = 0; i < strlen(str); i++) {
-        freq[(int)str[i]]++;
+    int len = strlen(str); // Compute the length of the string once
+    for (int i = 0; i < len; i++) {
+        freq[(int)str[i]]++; // Increment the frequency of each character
     }
+
     return 0; 
 }
