@@ -12,16 +12,15 @@ int main() {
         j++;
     }
     rev[j] ='\0';
-    
+
     for (int i = 0; i< len ; i++ ){
 
         if (rev[i] != name [i]){
             printf("No");
             break;
         }   
-        else{
-            printf("Yes");
-        }
+        
     }
+    printf("Yes");
     return 0;
 }
