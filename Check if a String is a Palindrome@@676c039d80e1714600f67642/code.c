@@ -11,7 +11,7 @@ int main() {
         rev[j] = name[i];
         j++;
     }
-
+    rev[j] ='\0'
     for (int i = 0; i< len ; i++ ){
 
         if (rev[i] != name [i]){
