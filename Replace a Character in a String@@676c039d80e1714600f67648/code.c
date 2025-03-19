@@ -11,7 +11,7 @@ int main(){
     //char res = strchr(str, target);
     //int idx = result - str;
     for (int i = 0; i < len; i++){
-        if (str[i] == str[target]){
+        if (str[i] == target){
             str[i] = change;
         }
     }
