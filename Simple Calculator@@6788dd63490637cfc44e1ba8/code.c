@@ -4,8 +4,8 @@ int main() {
     char operator;
     double num1, num2, result;
 
-    scanf(" %c", &operator); // Note the space before %c to consume newline characters
     scanf("%lf %lf", &num1, &num2);
+    scanf(" %c", &operator); 
 
     // Perform the calculation based on the operator
     if (operator == '+') {
