@@ -4,8 +4,8 @@
 
 int main(){
     char str[100], target, change;
-    scanf("%s",&str);
-    scanf("%c",&target);
+    scanf("%s\n", str);
+    scanf("%c\n",&target);
     scanf("%c",&change);
     int len = strlen(str);
     //char res = strchr(str, target);
