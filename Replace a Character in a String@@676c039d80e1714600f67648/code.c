@@ -8,8 +8,8 @@ int main(){
     scanf("%c",&target);
     scanf("%c",&change);
     int len = strlen(str);
-    char res = strchr(str, target);
-    int idx = result - str;
+    //char res = strchr(str, target);
+    //int idx = result - str;
     for (int i = 0; i < len; i++){
         if (str[i] == str[target]){
             str[i] = str[change];
