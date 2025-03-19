@@ -22,10 +22,10 @@ int main() {
             result = num1 / num2;
             printf("%d", result);
         } else {
-            printf("Error: Division by zero is not allowed.\n");
+            printf("error");
         }
     } else {
-        printf("Error: Invalid operator.\n");
+        printf("error");
     }
 
     return 0;
