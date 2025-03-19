@@ -12,7 +12,7 @@ int main(){
     //int idx = result - str;
     for (int i = 0; i < len; i++){
         if (str[i] == str[target]){
-            str[i] = str[change];
+            str[i] = change;
         }
     }
     printf("%s", str);
