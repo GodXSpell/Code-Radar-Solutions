@@ -11,7 +11,7 @@ int main(){
     //int len2 =  strlen(str2);
     for (int i = 0; i < len1; i++){
         if (strchr(str2,str1[i]) == NULL){
-            all = 0;
+            allFound = 0;
             break;
         }
     }
