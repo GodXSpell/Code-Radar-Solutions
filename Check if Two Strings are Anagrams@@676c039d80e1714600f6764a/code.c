@@ -9,7 +9,7 @@ int main(){
     int len1 =  strlen(str1);
     int len2 =  strlen(str2);
     for (int i = 0; i < len1; i++){
-        char *result = strchr(str2,str[i]);
+        char *result = strchr(str2,str1[i]);
         if (result == NULL){
             printf("No\n");
         }else{
