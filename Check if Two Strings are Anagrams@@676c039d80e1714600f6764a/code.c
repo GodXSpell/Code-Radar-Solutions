@@ -11,9 +11,9 @@ int main(){
     for (int i = 0; i < len1; i++){
         char *result = strchr(str2,str[i]);
         if (result == NULL){
-            printf("No");
+            printf("No\n");
         }else{
-            printf("Yes");
+            printf("Yes\n");
         }
     }
 }
