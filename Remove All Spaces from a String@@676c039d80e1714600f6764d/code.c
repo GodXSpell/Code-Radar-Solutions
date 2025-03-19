@@ -4,7 +4,7 @@
 
 int main() {
     char str[100];
-    scanf("%s", str);
+    scanf("%[^\n]", str);
 
     // Tokenize the string by spaces
     char *token = strtok(str, " ");
