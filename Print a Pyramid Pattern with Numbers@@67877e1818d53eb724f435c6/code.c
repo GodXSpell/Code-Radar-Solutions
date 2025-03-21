@@ -1,18 +1,15 @@
-// Your code here...
-// Your code here...
 #include <stdio.h>
-int main(){
+int main() {
     int num;
     scanf("%d",&num);
-    for (int i = 0; i < num; i++){
-        for (int j = 0; j < 2*num-1; j++){
-            if(j < num - 1 - i || j > num - 1 + i){
-                printf(" ");
-            }
-            else{
-                printf("1 ");
-            }
+    for(int i=1;i<=num;i++){
+        for(int j=1;j<=num-i;j++){
+            printf(" ");
         }
-        printf("\n");
+        for(int j=1;j<=i;j++){
+            printf("%d ",j);
+        }printf("\n");
     }
+    
+    return 0;
 }
