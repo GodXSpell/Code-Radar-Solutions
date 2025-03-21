@@ -5,6 +5,7 @@
 int main() {
     char str[100], repwith;
     scanf("%[^\n]", str);
+    fget();
     scanf("%c",&repwith);
     int len = strlen(str);
     for (int i = 0; i < len; i++) {
