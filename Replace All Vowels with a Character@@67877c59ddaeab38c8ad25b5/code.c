@@ -1,12 +1,11 @@
 // Your code here...
 #include <stdio.h>
-#include <string.h> // For string manipulation functions
+#include <string.h> 
 
 int main() {
     char str[100], repwith;
     scanf("%s", str);
-    //fget();
-    scanf("%c",&repwith);
+    scanf(" %c",&repwith);
     int len = strlen(str);
     for (int i = 0; str[i]!='\0'; i++) {
         if (str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u' || 
