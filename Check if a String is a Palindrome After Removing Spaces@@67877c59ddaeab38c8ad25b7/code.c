@@ -8,7 +8,13 @@ int main() {
     char *token = strtok(str, " "); // Tokenize the string using space as the delimiter
     while (token!=NULL){
         printf("%s", token);
-        token = (NULL," ");
+        token = strtok(NULL," ");
+    }
+
+    len = strlen(token);
+    //rev
+    for(int i = 0; i < len; i++){
+        
     }
     return 0;
 }
