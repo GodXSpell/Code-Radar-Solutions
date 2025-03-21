@@ -13,8 +13,10 @@ int main() {
 
     len = strlen(token);
     //rev
-    for(int i = 0; i < len; i++){
-        
+    for(int i = 0; i < len/2; i++){
+        int temp = token[i];
+        token[i] = token[len-1-i];
+        token[len-1-i] = temp;
     }
     return 0;
 }
