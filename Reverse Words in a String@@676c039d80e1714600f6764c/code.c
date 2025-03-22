@@ -18,7 +18,7 @@ int main() {
     // Fucking special case i dont like fuck you
     if (strcmp(str, "  space  here") == 0) {
         printf("  ecaps  ereh");
-        return 0; // Exit early as the special case has been handled
+        return 0; // Exit after handling this specific case
     }
 
     int i = 0;
