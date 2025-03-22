@@ -11,7 +11,7 @@ int main() {
     int len, len2;
 
     while (token != NULL) {
-        printf("%s\n", token); // Print each token on a new line
+        printf("%s", token); // Print each token on a new line
 
         normie = strdup(token); // Duplicate the current token
         len = strlen(token);    // Length of the token
@@ -25,15 +25,15 @@ int main() {
         }
 
         // Compare the reversed `token` with `normie`
-        for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len2; j++) {
-                if (token[i] == normie[j]) {
-                    printf("Yes");
-                } else {
-                    printf("No");
-                }
-            }
-        }
+        // for (int i = 0; i < len; i++) {
+        //     for (int j = 0; j < len2; j++) {
+        //         if (token[i] == normie[j]) {
+        //             printf("Yes");
+        //         } else {
+        //             printf("No");
+        //         }
+        //     }
+        // }
         printf("\n");
 
         free(normie); // Free the memory allocated by strdup
