@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h> 
 #include <string.h>
 #include <stdbool.h>
 
@@ -20,11 +21,18 @@ int main() {
 
     scanf("%[^\n]", str);
 
+
     for (int i = 0; i < strlen(str); i++) {
         if (str[i] != ' ') {
-            noSpaces[index++] = str[i];
+            noSpaces[index++] = tolower(str[i]); // Convert to lowercase while copying
         }
     }
+
+    // for (int i = 0; i < strlen(str); i++) {
+    //     if (str[i] != ' ') {
+    //         noSpaces[index++] = str[i];
+    //     }
+    // }
     noSpaces[index] = '\0'; 
     
     if (isPalindrome(noSpaces, index)) {
