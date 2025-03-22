@@ -34,7 +34,7 @@ int main() {
         //         }
         //     }
         // }
-        printf("\n");
+        // printf("\n");
 
         free(normie); // Free the memory allocated by strdup
         token = strtok(NULL, " "); // Move to the next token
