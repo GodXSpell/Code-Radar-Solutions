@@ -26,7 +26,7 @@ int main() {
 
         //Compare the reversed `token` with `normie`
         for (int i = 0; i < len; i++) {
-            for (int j = 0; j < len2; j++) {
+            for (int j = len2; j > 0 ; j++) {
                 if (token[i] == normie[j]) {
                     printf("Yes");
                 } else {
