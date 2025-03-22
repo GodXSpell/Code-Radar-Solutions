@@ -14,8 +14,14 @@ void reverseWord(char word[]) {
 
 int main() {
     char str[100];
-    scanf("%[^\n]", str); 
+    scanf("%[^\n]", str);
 
+    int i = 0;
+    while (str[i] == ' ') { 
+        printf(" "); 
+        i++;
+    }
+ 
     char *token = strtok(str, " "); 
 
     while (token != NULL) {
