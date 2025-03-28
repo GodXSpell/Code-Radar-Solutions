@@ -11,7 +11,7 @@ int main(){
 
     for(int i=0;i<size;i++){
         for(int j=0;j<size;j++){
-            if (!(i < j+1)){
+            if (!(i <= j+1)){
                 yes = 0;
             }
         }
