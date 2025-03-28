@@ -12,7 +12,7 @@ int main() {
 
     int tempArrVal = arr[size-1];
     for (int i = 0; i<rotate; i++){
-        for (int j = n; j>0; j--){
+        for (int j = size; j>0; j--){
             arr[j] = arr[j-1];    
         }    
         arr[i] = tempArrVal;
