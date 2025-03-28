@@ -2,23 +2,21 @@
 
 int main() {
     int size, rotate;
-    int arr[size]; 
+    int arr[size],arr2[size]; 
 
     scanf("%d",&size);
     for(int i = 0; i<size; i++){
         scanf("%d",&arr);
     }
     scanf("%d",&rotate);
+    
+    rotate = rotate%size;
 
-    int tempArrVal = arr[size-1];
-    for (int i = 0; i<rotate; i++){
-        for (int j = size; j>0; j--){
-            arr[j] = arr[j-1];    
-        }    
-        arr[i] = tempArrVal;
+    for(int i = 0;i<size;i++){
+        arr2[(i+rotate)%size] = arr[i];
     }
     for(int i = 0; i<size; i++){
-        printf("%d", arr[i]);
+        printf("%d\n", arr2[i]);
     }
     return 0;
 }
