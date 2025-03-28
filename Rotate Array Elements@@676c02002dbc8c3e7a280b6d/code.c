@@ -2,11 +2,11 @@
 
 int main() {
     int size, rotate;
-    int arr[size],arr2[size]; 
 
     scanf("%d",&size);
+    int arr[size],arr2[size]; 
     for(int i = 0; i<size; i++){
-        scanf("%d",&arr);
+        scanf("%d",&arr[i]);
     }
     scanf("%d",&rotate);
     
