@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    int arr[size]; 
     int size, rotate;
+    int arr[size]; 
 
     scanf("%d",&size);
     for(int i = 0; i<size; i++){
