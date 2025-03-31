@@ -9,7 +9,7 @@ int main(){
         scanf("%d ",&nums);
     }
 
-    for(int i=0;i<size;i++){
+    for(int i=0;i<size-1;i++){
         
         if (i >= j){
             yes = 0;
