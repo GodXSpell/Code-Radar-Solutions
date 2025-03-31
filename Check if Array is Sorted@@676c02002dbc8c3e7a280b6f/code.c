@@ -1,26 +1,31 @@
-// Your code here...
 #include <stdio.h>
 
-int main(){
-    int size,nums;
-    int yes = 1;
-    scanf("%d",&size);
-    for(int i = 0;i<size;i++){
-        scanf("%d ",&nums);
+int main() {
+    int size;
+    int yes = 1; // Assumes the array is sorted initially.
+    scanf("%d", &size);
+    
+    int nums[size]; // Array to store the integers.
+    
+    // Input the array elements.
+    for (int i = 0; i < size; i++) {
+        scanf("%d", &nums[i]);
     }
-
-    for(int i=0;i<size-1;i++){
-        
-        if (nums[i] >= nums[i+1]){
+    
+    // Check if the array is sorted.
+    for (int i = 0; i < size - 1; i++) {
+        if (nums[i] > nums[i + 1]) { // Comparing adjacent elements.
             yes = 0;
             break;
         }
-        
-    }
-    if(yes){
-        printf("Sorted");
-    }else{
-        printf("Not Sorted");
     }
     
+    // Output result.
+    if (yes) {
+        printf("Sorted\n");
+    } else {
+        printf("Not Sorted\n");
+    }
+    
+    return 0;
 }
