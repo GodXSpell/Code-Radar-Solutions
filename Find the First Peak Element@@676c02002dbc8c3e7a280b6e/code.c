@@ -8,20 +8,25 @@ int main(){
         scanf("%d", &arr[i]);
     }
 
-    for(int i = 0; i<size-1;i++){
+    for(int i = 0; i<size;i++){
         if(i == 0){
             if(arr[i]>arr[i+1]){
                 printf("%d", arr[i]);
+                break;
             } 
         } else if (i == size-1){
             if(arr[i]>arr[i-1]){
                 printf("%d", arr[i]);
+                break;
             }
         } 
         else if (arr[i]>arr[i+1] && arr[i]>arr[i-1]){
             printf("%d", arr[i]);
-        } else{
-            printf("-1");
+            break;
         }
     }
+    
+    printf("-1");
+    returm 0;
+    
 }
