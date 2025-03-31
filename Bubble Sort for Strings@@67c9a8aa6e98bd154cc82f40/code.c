@@ -16,29 +16,8 @@ void bubbleSort(char arr[][100], int n) {
     }
 }
 
-int main() {
-    int n;
-
-    // Input the number of strings
-    printf("Enter the number of strings: ");
-    scanf("%d", &n);
-
-    char arr[n][100]; // Array to store strings (each string up to 100 characters)
-
-    // Input the strings
-    printf("Enter the strings:\n");
-    for (int i = 0; i < n; i++) {
-        scanf("%s", arr[i]);
-    }
-
-    // Sort the strings
-    bubbleSort(arr, n);
-
-    // Output the sorted strings
-    printf("Sorted strings:\n");
+void printArray(char arr[][100], int n) {
     for (int i = 0; i < n; i++) {
         printf("%s\n", arr[i]);
     }
-
-    return 0;
 }
