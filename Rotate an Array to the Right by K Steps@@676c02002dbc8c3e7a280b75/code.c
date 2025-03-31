@@ -17,7 +17,7 @@ int main() {
         arr2[(i+rotate)%size] = arr[i];
     }
     for(int i = 0; i<size; i++){
-        printf("%d\n", arr2[i]);
+        printf("%d ", arr2[i]);
     }
     return 0;
 }
