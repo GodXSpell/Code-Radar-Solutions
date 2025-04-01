@@ -19,7 +19,7 @@ int main() {
             }
         }
         if (isLeader) {
-            printf("%d", arr[i]);
+            printf("%d ", arr[i]);
         }
     }
 
