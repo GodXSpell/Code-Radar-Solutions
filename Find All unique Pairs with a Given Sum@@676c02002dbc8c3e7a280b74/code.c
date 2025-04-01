@@ -23,9 +23,6 @@ int main() {
         }
     }
 
-    if (pairFound == 0) {
-        printf("No valid pair found.\n");
-    }
 
     return 0;
 }
