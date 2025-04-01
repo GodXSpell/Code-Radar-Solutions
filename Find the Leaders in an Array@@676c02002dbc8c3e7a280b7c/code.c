@@ -11,10 +11,10 @@ int main() {
     }
     
     for (int i = 0; i < size; i++) {
-        int isLeader = 1; // Flag to check if arr[i] is a leader
+        int isLeader = 1;
         for (int j = i + 1; j < size; j++) {
             if (arr[i] < arr[j]) {
-                isLeader = 0; // If any element to the right is greater, it's not a leader
+                isLeader = 0; 
                 break;
             }
         }
