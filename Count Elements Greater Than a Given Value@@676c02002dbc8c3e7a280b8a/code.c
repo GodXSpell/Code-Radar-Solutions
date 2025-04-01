@@ -8,7 +8,7 @@ int main() {
     for (int i = 0; i < size; i++) {
         scanf("%d", &arr[i]);
         if(arr[i]>target){
-            count+=1
+            count+=1;
         }
     }
     printf("%d", count);
