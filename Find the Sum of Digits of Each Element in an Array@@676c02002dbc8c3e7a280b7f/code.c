@@ -13,6 +13,8 @@ int sumOfDigits(int num) {
 
 int main() {
     int n;
+    scanf("%d", &n);
+
     int arr[n], result[n];
 
     for (int i = 0; i < n; i++) {
