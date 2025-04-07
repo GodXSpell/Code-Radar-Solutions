@@ -3,24 +3,22 @@
 
 int main() {
     int size;
-    scanf("%d", &size); // Input: Array size
-
+    scanf("%d", &size); 
     int arr[size];
     for (int i = 0; i < size; i++) {
-        scanf("%d", &arr[i]); // Input: Array elements
+        scanf("%d", &arr[i]); 
     }
 
-    int maxProduct = arr[0] * arr[1]; // Initialize with the product of the first two elements
+    int maxProduct = arr[0] * arr[1]; 
 
-    // Loop through the array to find the maximum product
     for (int i = 0; i < size - 1; i++) {
-        for (int j = i + 1; j < size; j++) { // Ensure pairs are not the same element
+        for (int j = i + 1; j < size; j++) { 
             if ((arr[i] * arr[j]) > maxProduct) {
                 maxProduct = arr[i] * arr[j];
             }
         }
     }
 
-    printf("%d\n", maxProduct); // Output: Maximum product
+    printf("%d\n", maxProduct); 
     return 0;
 }
