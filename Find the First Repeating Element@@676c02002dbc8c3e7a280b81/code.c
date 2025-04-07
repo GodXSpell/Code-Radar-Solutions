@@ -30,7 +30,7 @@ int main() {
     }
 
     if (firstRepeatingIndex == INT_MAX) {
-        printf("No repeating elements\n");
+        printf("-1");
     } else {
         printf("%d\n", firstRepeatingNumber);
     }
